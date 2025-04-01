@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    $to = "wixdeveloper.in.co@gmail.com"; // Replace with your email
+    $to = "your-email@example.com"; // Replace with your email
     $email_subject = "New Contact Form Submission: $subject";
     $email_body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
