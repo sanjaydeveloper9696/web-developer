@@ -1,0 +1,17 @@
+
+function register_policies_post_type() {
+    $args = array(
+        'label' => 'Policies',
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 5, // Just below Posts
+        'menu_icon' => 'dashicons-shield',
+        'supports' => array('title', 'editor', 'page-attributes'),
+        'hierarchical' => true, // For parent-child like pages
+        'show_in_rest' => true, // For Gutenberg or Elementor
+        'has_archive' => true,
+    );
+    register_post_type('policy', $args);
+}
+add_action('init', 'register_policies_post_type');
