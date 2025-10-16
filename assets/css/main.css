@@ -80,6 +80,33 @@ body {
 
 }
 
+
+    .whatsapp-fab {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+    .whatsapp-fab:hover {
+      transform: scale(1.1);
+    }
+    svg {
+      width: 28px;
+      height: 28px;
+      fill: #fff;
+    }
+
+
+
 a {
   color: var(--accent-color);
   text-decoration: none;
