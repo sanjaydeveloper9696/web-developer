@@ -407,8 +407,8 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: #fff;
+  background-color: #040b14;
   font-size: 14px;
   padding: 40px 0;
   position: relative;
@@ -1316,4 +1316,51 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+
+.site-card {
+  display: block;
+  padding: 16px 18px;
+  background: var(--surface-color);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--default-color);
+  font-weight: 500;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.site-card:hover {
+  transform: translateY(-6px);
+  color: var(--accent-color);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.portfolio-heading {
+  margin-bottom: 18px;
+  font-weight: 600;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 10px;
+}
+
+.count-box {
+  background: var(--surface-color);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.count-box h3 {
+  font-size: 32px;
+  color: var(--accent-color);
+}
+
+.count-box.highlight {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.count-box.highlight h3 {
+  color: #fff;
 }
